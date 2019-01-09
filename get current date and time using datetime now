@@ -1,0 +1,30 @@
+
+# get current date and time using datetime now
+
+from datetime import date
+from datetime import time
+from datetime import datetime
+
+
+def main():
+    #Get today's time from datetime class
+
+    today = datetime.now()
+    print(today)
+
+    #Get current time 
+
+    t = datetime.time(datetime.now())
+    print("The current time is: ", t)
+
+    #Get Weekdays number weekday returns 0 (monday) through 6(sunday)
+    weekdays = date.weekday(today)
+
+    days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    print("Today is day number %d" %weekdays +" of the week.")
+    print("Which is "+ days[weekdays] )
+
+
+
+if __name__== "__main__":
+    main()
