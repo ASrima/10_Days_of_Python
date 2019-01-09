@@ -1,0 +1,24 @@
+from datetime import date
+from datetime import time
+from datetime import datetime
+
+def main():
+    #declare date object
+    #get today's date from today() method from the date
+    today = date.today()
+    print("Print date in order : ", today.day, today.month, today.year)
+
+    print("Today's date is ", today)
+
+    #retrive weekday monday = 0 and sunday = 6 (index 0 to 6)
+    print("Today's Weekday:", today.weekday())
+
+    #print current time
+    today = datetime.now()
+    print("The current date and time is :", today)
+
+
+
+
+if __name__ == "__main__":
+   main()
