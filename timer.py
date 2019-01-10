@@ -5,7 +5,7 @@ hours = 0
 minutes = 0
 seconds = 0
 
-start = raw_input("Enter r to run the program: ") #in python 3 use input instead of raw_input
+start = raw_input("Enter r to run the program: ") 
 
 while start.lower() =="r":
     if seconds >= 60:
