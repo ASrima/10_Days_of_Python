@@ -152,7 +152,7 @@ class myToDo:
                 query = "DELETE FROM tasks WHERE id = "+number
                 cursor.execute(query)
                 raw_input("Press the Enter key to continue")
-            else:
+            else enter_choices == 5:
                 print("End the program")
                 sys.exit()
 end = myToDo()
